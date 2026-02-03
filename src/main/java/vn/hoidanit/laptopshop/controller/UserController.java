@@ -17,10 +17,10 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/mywebsite")
+    @RequestMapping("/")
     public String getHomePage() {
         String test = this.userService.handleHello();
-        return "hieu.html";
+        return "hello";
     }
 }
 
